@@ -1,0 +1,176 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{pgffor}
+\usepackage{ragged2e}
+\usepackage{ex3}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+
+
+\begin{center}
+    \textbf{\Huge \scshape Rangel Anselm Koli} \\ \vspace{1pt}
+    \small +1 315-374-9529 $|$ \href{mailto:rangelkoli@gmail.com}{\underline{rangelkoli@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/rangelkoli}{\underline{linkedin.com/in/rangelkoli}} $|$
+    \href{https://github.com/rangelkoli}{\underline{github.com/rangelkoli}}
+\end{center}
+
+\section{Career Objective}
+\justifying
+\data[careerObjective]
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \data[TechSkills][TechSkillsLanuages]} \\
+     \textbf{Frameworks}{: \data[TechSkills][TechSkillsFrameworks]} \\
+     \textbf{Developer Tools}{: \data[TechSkills][TechSkillsDevTools]} \\
+     \textbf{Libraries}{: \data[TechSkills][TechSkillsLibraries]} 
+    }}
+ \end{itemize}
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Syracuse University}{Syracuse, NY}
+      {Masters of Science in Computer Science}{Anticipated May 2025}
+    \resumeSubheading
+      {St. Francis Institute of Technology(Mumbai University)}{Mumbai, MH}
+      {Bachelors in Information Technology}{August 2019 -- May 2023}
+  \resumeSubHeadingListEnd
+  \section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{\data[projects][0][ProjOneName]} $|$ \emph{\data[projects][0][ProjOneTech]}}{June 2020 -- Present}
+        \resumeItemListStart
+          \resumeItem{\data[projects][0][ProjOneDescOne]}
+          \resumeItem{\data[projects][0][ProjOneDescTwo]}
+          \resumeItem{\data[projects][0][ProjOneDescThree]}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{\data[projects][1][ProjTwoName]} $|$ \emph{\data[projects][0][ProjOneTech]}}{June 2020 -- Present}
+        \resumeItemListStart
+          \resumeItem{\data[projects][1][ProjTwoDescOne]}
+          \resumeItem{\data[projects][1][ProjTwoDescTwo]}
+          % \resumeItem{\data[projects][1][ProjTwoDescThree]}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{\data[projects][2][ProjThreeName]} $|$ \emph{\data[projects][0][ProjOneTech]}}{June 2020 -- Present}
+        \resumeItemListStart
+          \resumeItem{\data[projects][2][ProjThreeDescOne]}
+          \resumeItem{\data[projects][2][ProjThreeDescTwo]}
+          % \resumeItem{\data[projects][2][ProjThreeDescThree]}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\data[experience][0][ExpOneRole]}{\data[experience][0][ExpOneDuration]}
+      {\data[experience][0][ExpOneCompName]}{Mumbai, MH}
+      \resumeItemListStart
+        \resumeItem{\data[experience][0][ExpOneDescOne]}
+        \resumeItem{\data[experience][0][ExpOneDescTwo]}
+        % \resumeItem{\VAR{ExpOneDescThree}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+\section{Extra-Curricular}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Volunteered for Madh Christian Koli Samaj}{: Won 1st Place in the Code Crush 1.0 Hackathon organized by St. Francis Institute of Technology} \\
+     \textbf{Soccer Participation}{: Volunteered for the Madh Christian Koli Samaj (NGO) in helping with medical camps for the elderly and organizing educational seminars for the youth} \\
+     \textbf{Video Gaming Leadership}{:  Won 1st Place at the CuseHacks Beta 2024 Hackathon organized by Syracuse University} \\
+     \textbf{Content Creation}{: Created Content on “YouTube” for 15K active subscribers}
+    }}
+ \end{itemize}
+
+
+
+
+\end{document}
